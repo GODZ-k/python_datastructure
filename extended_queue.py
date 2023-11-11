@@ -29,6 +29,12 @@ class Queue(list):
         else:
             raise IndexError("queue is empty")
 
+    def insert_item(self,index,data):
+        try:
+            raise AttributeError("insert is not allowed")
+        except Exception as e:
+            print(e)
+
 
 q2=Queue()
 q2.enqueue(10)
@@ -36,6 +42,7 @@ q2.enqueue(20)
 q2.enqueue(30)
 q2.enqueue(40)
 q2.dequeue()
+# q2.insert_item(0,10)
 print(" front item of queue :", q2.get_front())
 print(" rear item of queue :", q2.get_rear())
 print(" size of queue :", q2.size())
