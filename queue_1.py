@@ -12,22 +12,22 @@ class Queue:
     if not self.is_empty():
        return self.item.pop(0)
     else:
-        raise IndexError("list is empty")
+        raise IndexError("queue is empty")
   def get_front(self):
     if not self.is_empty():
       return self.item[0]
     else:
-        raise IndexError("list is empty")
+        raise IndexError("queue is empty")
   def get_rear(self):
       if not self.is_empty():
           return self.item[-1]
       else:
-          raise IndexError("list is empty")
+          raise IndexError("queue is empty")
   def size(self):
       if not self.is_empty():
           return len(self.item)
       else:
-          raise IndexError("list is empty")
+          raise IndexError("queue is empty")
 
 q1=Queue()
 q1.enqueue(10)

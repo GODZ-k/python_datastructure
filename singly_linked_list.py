@@ -32,6 +32,15 @@ class SLL:
                   return temp
                 temp=temp.next
         return None
+
+    def element(self):
+        if not self.is_empty():
+            temp=self.head
+            while temp.next is not None:
+                temp=temp.next
+            return temp.item
+        else:
+            raise IndexError("list is empty")
     def insert_after(self,temp,data):
         if temp is not None:
             n=Node(data,temp.next)
