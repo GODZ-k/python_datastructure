@@ -7,6 +7,7 @@ class Queue:
     def __init__(self,head=None,item_count=0):
         self.head=head
         self.item_count=item_count
+        # self.rear=rear
 
     def is_empty(self):
         return self.head is None
