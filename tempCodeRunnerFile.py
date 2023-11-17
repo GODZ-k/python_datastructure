@@ -1,5 +1,4 @@
-   # def peek(self,):
-    #     if not self.is_empty():
-    #         return self.head.item
-    #     else:
-    #         raise IndexError("list is empty")
+d1.insert_front(20)
+# d1.insert_front(30)
+# d1.insert_front(40)
+# d1.insert_front(50)
