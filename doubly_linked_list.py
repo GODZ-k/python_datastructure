@@ -48,6 +48,14 @@ class DLL:
         else:
             print("no data found")
 
+    def get_last(self):
+        if not self.head == None:
+            temp=self.head
+            while temp.next is not None:
+                temp=temp.next
+            return temp
+        else:
+            raise IndexError("Invalid")
 
 
     def print_all_items(self):
@@ -156,30 +164,30 @@ class iterator:
 
 
 
-mylist=DLL()
-mylist.insert_at_start(10)
-mylist.insert_at_start(20)
-mylist.insert_at_start(30)
-mylist.insert_at_start(40)
-mylist.insert_at_end(45)
-mylist.insert_at_end(55)
-mylist.insert_at_end(65)
-mylist.insert_after(mylist.search(55),75)
-mylist.insert_after(mylist.search(75),85)
-# mylist.delete_item(85)
+# mylist=DLL()
+# mylist.insert_at_start(10)
+# mylist.insert_at_start(20)
+# mylist.insert_at_start(30)
+# mylist.insert_at_start(40)
+# mylist.insert_at_end(45)
+# mylist.insert_at_end(55)
+# mylist.insert_at_end(65)
+# mylist.insert_after(mylist.search(55),75)
+# mylist.insert_after(mylist.search(75),85)
+# # mylist.delete_item(85)
+# # mylist.delete_item(85)
+# # mylist.delete_item(40)
+# # mylist.delete_item(65)
+# # mylist.delete_item(65)
+# mylist.delete_item(65)
+# # mylist.delete_item(40)
+# # mylist.delete_item(20)
+# # mylist.delete_item(20)
 # mylist.delete_item(85)
 # mylist.delete_item(40)
-# mylist.delete_item(65)
-# mylist.delete_item(65)
-mylist.delete_item(65)
-# mylist.delete_item(40)
-# mylist.delete_item(20)
-# mylist.delete_item(20)
-mylist.delete_item(85)
-mylist.delete_item(40)
-# mylist.delete_item(10)
-mylist.delete_item(55)
+# # mylist.delete_item(10)
+# mylist.delete_item(55)
 
-mylist.print_all_items()
-# for x in mylist:
-#     print(x,end=" ")
+# mylist.print_all_items()
+# # for x in mylist:
+# #     print(x,end=" ")
