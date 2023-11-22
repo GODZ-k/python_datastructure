@@ -13,7 +13,7 @@ class Deque:
         return self.head is None
 
     def insert_front(self, data):
-        n = Node(None, self.head, data)
+        n = Node(None, self.head,data)
         if not self.is_empty():
             self.head.prev = n
         self.head = n
